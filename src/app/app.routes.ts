@@ -6,11 +6,17 @@ import {RemaindersComponent} from "./pages/remainders/remainders.component";
 import {SettingComponent} from "./pages/setting/setting.component";
 import {HomeComponent} from "./pages/home/home.component";
 import {SearchComponent} from "./pages/search/search.component";
+import {LoginComponent} from "./pages/login/login.component";
 
 export const routes: Routes = [
   {
+    path: "",
+    component: LoginComponent,
+    title: ""
+  },
+  {
     path: "dashboard",
-    component: DashboardComponent,
+    component: HomeComponent,
     title: ""
   },
   {
@@ -37,6 +43,9 @@ export const routes: Routes = [
     path: "setting",
     component: SettingComponent,
     title: "settings"
-  }
+  },
+  {
+    path: '', redirectTo: 'login', pathMatch: "full",
+  },
 
 ];
