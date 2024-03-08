@@ -8,7 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './reading.component.css'
 })
 export class ReadingComponent {
-  category = "category";
-  courseName = "course Name"
+  category = "Web Development";
+  courseName = "course Name";
+  tutor = "tutor";
+  duration = "duration"
 
 }

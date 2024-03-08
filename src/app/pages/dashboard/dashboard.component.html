@@ -1,48 +1,23 @@
 <div class=" w-10/12 mx-auto  mt-6 mb-8  lg:w-11/12  lg:flex lg:justify-between items-center ">
   <div>
     <h2 class=" lg:font-semibold lg:text-2xl text-blue-600">Hi <span class="text-zinc-900">{{name}}</span>, Good Afternoon !</h2>
-    <p class="text-sm lg:text-lg">Lets learn something new today</p>
+    <p class="text-xs lg:text-sm">Lets learn something new today</p>
   </div>
-  <div class="lg:w-4/12 my-4 lg:my-0 hidden lg:block">
-    <form class="mx-auto ">
-      <label for="default-search" class=" text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
-      <div class="relative">
-        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11 2.5C15.97 2.5 20 6.53 20 11.5C20 16.47 15.97 20.5 11 20.5C6.03 20.5 2 16.47 2 11.5C2 8 4 4.96 6.93 3.47" stroke="#656565" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M19.07 21.47C19.6 23.07 20.81 23.23 21.74 21.83C22.6 20.55 22.04 19.5 20.5 19.5C19.35 19.5 18.71 20.39 19.07 21.47Z" stroke="#656565" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <input type="search" id="default-search" class="block w-full p-2 ps-10 text-sm  text-gray-90 bg-gray-100 rounded-full " placeholder="Search" required />
-      </div>
-    </form>
-  </div>
+  <app-searchComponent></app-searchComponent>
 </div>
-<div class=" mx-auto w-11/12  bg-blue-50  rounded-3xl lg:px-8 lg:flex lg:w-11/12 justify-between">
-<div class="p-3 lg:p-8 ">
-  <h1 class="text-blue-600 font-bold text-lg">Go Premium</h1>
-  <p class="font-light text-zinc-900 mt-3 text-sm tracking-wide ">Explore 100+ expert curated courses prepared for you.</p>
-  <button class="bg-white p-2 mt-6 text-blue-600 w-6/12 rounded-full bottom-6 hover:bg-blue-600 hover:text-blue-50 text-sm ease-out duration-700 transition-delay-100 lg:p-3 lg:w-4/12 ">Get Access</button>
-</div>
-  <div class="hidden lg:block">
-    <img src="assets/avater.png" alt="">
-  </div>
-</div>
+<app-premium-component></app-premium-component>
 
 <div class=" px-8  my-8">
   <h5 class="font-normal text-blue-600 text-sm ">Overview</h5>
-
 <app-course></app-course>
-
 </div>
 <div class=" px-8  my-8">
   <div class="flex justify-between">
     <h5 class="font-normal text-blue-600 text-sm ">Continue reading</h5>
     <a href="" class="font-normal text-blue-600 text-sm underline">view all</a>
   </div>
-
 <app-reading></app-reading>
-
+  <app-reading></app-reading>
 </div>
 
 <!---->
