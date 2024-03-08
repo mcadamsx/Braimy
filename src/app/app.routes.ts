@@ -10,14 +10,14 @@ import {LoginComponent} from "./pages/login/login.component";
 
 export const routes: Routes = [
   {
-    path: "",
+    path: "login",
     component: LoginComponent,
     title: ""
   },
   {
     path: "dashboard",
     component: HomeComponent,
-    title: ""
+    title: "dashboard"
   },
   {
     path: "courses",

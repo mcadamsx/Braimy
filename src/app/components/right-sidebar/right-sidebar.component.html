@@ -1,7 +1,7 @@
-<div>
+<div class="border-l border-gray-200">
   <div class="lg:px-4 py-6 border-b">
     <div class="hidden   w-full  lg:flex lg:justify-between lg:items-center">
-      <a class=" p-2 bg-blue-50 rounded-full">
+      <a class=" p-2 bg-blue-50 rounded-full ">
         <!--      <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">-->
         <!--        <circle cx="27" cy="27" r="27" fill="#EFF4FF"/>-->
         <!--        -->
@@ -13,7 +13,7 @@
           <path d="M16.8975 19.0601C16.8975 20.7101 15.3787 22.0601 13.5225 22.0601C12.6 22.0601 11.745 21.7201 11.1375 21.1801C10.53 20.6401 10.1475 19.8801 10.1475 19.0601" stroke="#2563EB" stroke-width="1.5" stroke-miterlimit="10"/>
         </svg>
       </a>
-      <a class=" w-5/12 flex text-xs items-center" ><span><img src="assets/user.png" alt="User Image" class="w-6 rounded-2xl mr-4" ></span >John Doe</a>
+      <a class=" w-5/12 flex text-xs items-center cursor-pointer" (click)="logout()" ><span><img src="assets/user.png" alt="User Image" class="w-6 rounded-2xl mr-4" ></span >John Doe</a>
     </div>
   </div>
   <h5 class="font-normal text-blue-600 text-sm mx-auto w-10/12 my-4 ">Remainders</h5>
