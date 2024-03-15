@@ -9,7 +9,6 @@ import {Router} from "@angular/router";
   styleUrl: './login-form.component.css'
 })
 export class LoginFormComponent {
-
   constructor(private router:Router) {
   }
   submitForm(){
